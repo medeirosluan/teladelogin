@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        #textto1{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            width: 800px;
+            text-align: justify;
+           line-height: 30px;
+           
+        }
+
+        button{
+            padding: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h3 id="textto1">
+    
+            Este é o momento para você se superar. Nada mais importa além das suas conquistas pessoais e das vitórias interiores. São essas glórias que aumentam sua autoconfiança e consequentemente trazem paz e serenidade ao seu jeito de viver.
+    
+            Enxergue os dias e a vida de uma forma positiva. Não se intimide com comentários ou opiniões de pessoas alheias e que só querem falar mal ou falar por falar. A sua voz é a mais importante que você pode e deve escutar.
+    
+            Eu sei que nem sempre é fácil conviver com as desilusões e também com os medos e receios típicos do ser humano. Mas é exatamente isso que devemos combater. É hora de olhar no espelho e gritar “eu sou capaz!”.
+    
+            Só você pode fazer isso. Mais ninguém tem a capacidade de lhe fornecer esse ânimo. Levante a cabeça sempre, mesmo em instantes de dificuldade e provação. Lute até não aguentar mais e jamais ceda à desistência.
+    
+            
+        </h3>
+    </div>
+    
+    <button type="button" onclick="mudaCor()">Preto</button>
+    <button type="button" onclick="corWhite()">Branco</button>
+    <script>
+
+            const mudaCor = () => {
+
+                document.body.style.background = 'black'
+                let textoBranco = document.querySelector('#textto1')
+                textoBranco.style.color ='white'
+            }
+            const corWhite = () => {
+                
+                let textoPreto = document.querySelector('#textto1')
+                textoPreto.style.color ='black'
+                document.body.style.background = 'white'
+            }
+
+
+    </script>
+</body>
+</html>
