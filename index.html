@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
     <title>Document</title>
     <style>
 
@@ -11,18 +14,32 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
+            position: sticky;
+           
+            
         }
         #textto1{
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-family: "Madimi One", sans-serif; 
             width: 800px;
             text-align: justify;
-           line-height: 30px;
-           
+            line-height: 30px;
+        }
+
+        .botaoBtn{
+            display: flex;
+            justify-content: space-between;
+            
         }
 
         button{
             padding: 15px;
             font-weight: bold;
+
+        }
+
+        h3{
+            border: 1px solid ;
+            padding: 18px;
         }
     </style>
 </head>
@@ -42,9 +59,13 @@
             
         </h3>
     </div>
-    
-    <button type="button" onclick="mudaCor()">Preto</button>
-    <button type="button" onclick="corWhite()">Branco</button>
+
+    <div class="botaoBtn">
+        
+        <button type="button" onclick="mudaCor()">Preto</button>
+        <button type="button" onclick="corWhite()" id="qdrado">Branco</button>
+
+    </div>
     <script>
 
             const mudaCor = () => {
@@ -58,7 +79,10 @@
                 let textoPreto = document.querySelector('#textto1')
                 textoPreto.style.color ='black'
                 document.body.style.background = 'white'
+                
             }
+            
+        
 
 
     </script>
