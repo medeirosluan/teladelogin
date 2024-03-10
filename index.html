@@ -3,88 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
-    <title>BLACKOUT</title>
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.min.css">
+    <title>Document</title>
     <style>
-
-
         .container{
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             height: 100vh;
         }
-        #textto1{
-            font-family: "Madimi One", sans-serif; 
-            width: 800px;
-            text-align: justify;
-            line-height: 30px;
+
+        .container form{
+            width: 350px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
 
-        .botaoBtn{
-            display: flex;
-            justify-content: space-between;
+        form h2{
+            height: 13px;
+            color: orangered;
             
+        }
+
+        form p{
+            border-bottom: 5px solid;
+            width: 80px;
+            color: rgb(21, 68, 224);
+        }
+        input{
+            height: 0;
+            padding: 7px;
+            border: none;
+            outline: none;
+            font-size: 20px;
+        }
+
+        .fa-solid{
+            font-size: 25px;
+            color: rgba(128, 128, 128, 0.336);
+        }
+
+        .icon{
+            color: white;
+            font-size: 20px;
+            
+        }
+
+        fieldset{
+            height: 50px;
+            border-radius: 5px;
+            color: gray;
+            border-style: solid;
+            
+        }
+      
+
+        #btn{
+            margin-top: 20px;
+            padding: 15px;
+            background-color: orangered;
+            border: none;
+            font-weight: bold;
+            width: 100%;
+            color: white;
+            font-size: 18px;
             
         }
         
-        button{
-            flex-grow: 1;
-            padding: 15px;
-            font-weight: bold;
-            font-family: "Madimi One", sans-serif; 
-        }
-
-        h3{
-            border: 1px solid ;
-            padding: 18px;
-        }
-    </style>
+        </style>
 </head>
 <body>
     <div class="container">
-        
-        <h3 id="textto1">
-    
-            Este é o momento para você se superar. Nada mais importa além das suas conquistas pessoais e das vitórias interiores. São essas glórias que aumentam sua autoconfiança e consequentemente trazem paz e serenidade ao seu jeito de viver.
-    
-            Enxergue os dias e a vida de uma forma positiva. Não se intimide com comentários ou opiniões de pessoas alheias e que só querem falar mal ou falar por falar. A sua voz é a mais importante que você pode e deve escutar.
-    
-            Eu sei que nem sempre é fácil conviver com as desilusões e também com os medos e receios típicos do ser humano. Mas é exatamente isso que devemos combater. É hora de olhar no espelho e gritar “eu sou capaz!”.
-    
-            Só você pode fazer isso. Mais ninguém tem a capacidade de lhe fornecer esse ânimo. Levante a cabeça sempre, mesmo em instantes de dificuldade e provação. Lute até não aguentar mais e jamais ceda à desistência.
-    
-            
-        </h3>
+        <form action="" method="post">
+            <h2>FAZER LOGIN</h2>
+            <p></p>
+            <fieldset>
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="cpf" required autofocus>
+                <legend>E-mail,CPF ou CNPJ</legend>
+            </fieldset>
+            <fieldset>
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" name="" id="senha" maxlength="8">
+                <legend>Senha</legend>
+            </fieldset>
+            <button id="btn">
+                <i class="fa-solid fa-right-to-bracket icon"></i>
+                ENTRAR
+            </button>
+        </form>
     </div>
-
-    <div class="botaoBtn">
-        
-        <button type="button" onclick="mudaCor()">Preto</button>
-        <button type="button" onclick="corWhite()" id="qdrado">Branco</button>
-
-    </div>
-    <script>
-
-            const mudaCor = () => {
-
-                document.body.style.background = 'black'
-                let textoBranco = document.querySelector('#textto1')
-                textoBranco.style.color ='white'
-            }
-            const corWhite = () => {
-                
-                let textoPreto = document.querySelector('#textto1')
-                textoPreto.style.color ='black'
-                document.body.style.background = 'white'
-                
-            }
-            
-        
-
-
-    </script>
 </body>
 </html>
