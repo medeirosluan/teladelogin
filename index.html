@@ -7,6 +7,7 @@
     <title>Login</title>
     <style>
         .container{
+          
             display: flex;
             justify-content: center;
             align-items: center;
@@ -85,6 +86,9 @@
             <fieldset>
                 <i class="fa-solid fa-lock"></i>
                 <input type="password" name="" id="senha" maxlength="8">
+               
+                
+               
                 <legend>Senha</legend>
             </fieldset>
                 <button id="btn" >
@@ -92,20 +96,29 @@
                     ENTRAR
                 </button>
         </form>
+
+        
     </div>
+
+    
 
     <script>
         let input = document.querySelector('#senha')
         function mostra(){
-            if (input.getAttribute('type') === 'text') {
-                input.setAttribute('type', 'password')
+            if (input.getAttribute('type')==='text') {
+              input.setAttribute('type','password')
+           
+            
             } else {
                 input.setAttribute('type','text')
+          
+                
             }
         }
 
-        input.addEventListener('click',mostra)
-        input.addEventListener('mouseout',mostra)
+        v
+
+       
         
 
        
